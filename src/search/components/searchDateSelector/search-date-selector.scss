@@ -1,0 +1,78 @@
+.search-result__calendar {
+  display: flex;
+  padding-top: 25px;
+  align-items: center;
+  background-color: #fff;
+
+  &__date {
+    position: relative;
+    margin-left: 20px;
+    width: 40px;
+    color: #1eb7ee;
+    text-align: center;
+
+    label {
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .calendar-ico {
+      padding: 4px;
+      width: 40px;
+      height: 40px;
+      background-color: #1eb7ee;
+      color: #fff;
+
+      i {
+        font-size: 32px;
+        cursor: pointer;
+      }
+
+      input {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 42px;
+        height: 48px;
+        opacity: 0;
+        font-size: 32px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__dates {
+    display: flex;
+    margin-left: 30px;
+    padding-top: 4px;
+    width: 300px;
+    height: 62px;
+    text-align: center;
+
+    .date-yesterday,
+    .date-today,
+    .date-tomorrow {
+      padding-bottom: 5px;
+      flex: 1;
+      color: #b8b9b9;
+      border-bottom: 3px solid #d0d0d0;
+      cursor: pointer;
+    }
+
+    .active {
+      color: #1eb7ee;
+      border-bottom: 3px solid #1eb7ee;
+      transition: 0.5s;
+    }
+
+    .date-num {
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+    .date-title {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+// Kyiv airport Search flight - React + Redux + Router
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import './index.scss';
+
+ReactDOM.render(<App />, document.querySelector('#root'));
